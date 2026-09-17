@@ -24,13 +24,23 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize" >
-
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.login.LoginFragment"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LoginFragment"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegisterFragment"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

@@ -81,6 +81,7 @@
         android:background="@drawable/login_botton"
         android:backgroundTint="@null" />
     <Button
+        android:id="@+id/createAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -93,16 +94,13 @@
         android:textStyle="bold"
         android:gravity="center"
         android:backgroundTint="@color/white"/>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:text="Or continue with"
         android:textColor="#2949C6"
         android:textSize="15sp"
@@ -114,15 +112,15 @@
         android:orientation="horizontal"
         android:gravity="center">
         <ImageView
-        android:layout_width="52dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="130dp"
-        android:src="@drawable/google"
-        android:padding="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/social_button"/>
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/google"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/social_button"/>
         <ImageView
             android:layout_width="52dp"
             android:layout_height="40dp"
@@ -142,5 +140,5 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/social_button"/>
     </LinearLayout>
-    
+
 </LinearLayout>

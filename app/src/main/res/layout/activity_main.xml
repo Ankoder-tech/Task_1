@@ -1,87 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<androidx.fragment.app.FragmentContainerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+
+    android:id="@+id/nav_host_fragment"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FFFFFF"
-    tools:context=".MainActivity">
 
+    android:name="androidx.navigation.fragment.NavHostFragment"
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/signupimage"
-        android:scaleType="fitCenter" />
-
-
-    <TextView
-        android:id="@+id/titleText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Discover Your&#10;Dream Job here"
-        android:textColor="#2949C6"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:gravity="center"/>
-
-    <TextView
-        android:id="@+id/desText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Explore all the existing job roles based on your&#10;interest and study major"
-        android:textColor="#111111"
-        android:textSize="14sp"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        tools:context=".MainActivity">
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/loginButton"
-            android:layout_width="140dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="20dp"
-            android:text="Login"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:background="@drawable/login_botton"
-            android:backgroundTint="@null" />
-        <Button
-            android:id="@+id/registerButton"
-            android:layout_width="140dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="20dp"
-            android:text="Register"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:backgroundTint="@color/white"/>
-
-
-
-
-
-    </LinearLayout>
-</LinearLayout>
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/nav_graph" />
