@@ -23,7 +23,6 @@
 
     </fragment>
 
-
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.myappui.LoginFragment"
@@ -35,10 +34,14 @@
 
     </fragment>
 
-
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.myappui.RegisterFragment"
-        android:label="Register" />
+        android:label="Register" >
+    <action
+        android:id="@+id/action_register_to_login"
+        app:destination="@id/loginFragment" />
+    </fragment>
+
 
 </navigation>

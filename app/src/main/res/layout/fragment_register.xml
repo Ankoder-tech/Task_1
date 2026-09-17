@@ -40,6 +40,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
         android:hint="Email"
+        android:textColor="@color/black"
         android:paddingStart="15dp"
         android:background="@drawable/email_edittext"/>
     <EditText
@@ -52,6 +53,7 @@
         android:layout_marginBottom="20dp"
         android:hint="Password"
         android:paddingStart="15dp"
+        android:textColor="@color/black"
         android:background="@drawable/email_edittext"/>
     <EditText
         android:layout_width="match_parent"
@@ -62,6 +64,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="20dp"
         android:hint="Confirm Password"
+        android:textColor="@color/black"
         android:paddingStart="15dp"
         android:background="@drawable/email_edittext"/>
 
@@ -82,7 +85,8 @@
         android:textStyle="bold"
         android:background="@drawable/login_botton"
         android:backgroundTint="@null" />
-    <TextView
+    <Button
+        android:id="@+id/already_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -111,7 +115,7 @@
         android:textStyle="bold"
         android:gravity="center"/>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
@@ -120,7 +124,6 @@
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginStart="130dp"
             android:src="@drawable/google"
             android:padding="8dp"
             android:layout_marginEnd="8dp"
